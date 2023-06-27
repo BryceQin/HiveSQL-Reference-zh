@@ -1,4 +1,4 @@
-# HiveSQL
+# Operators and Functions
 ## 1. Built-in Operators(内建运算符)
 ### 1.1 Operators Precedences(运算符优先顺序)
 1. 元素选择(element selector, dot)
