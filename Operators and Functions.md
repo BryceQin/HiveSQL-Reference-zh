@@ -19,6 +19,59 @@
 举例：
     -A
 ```
+3. 一元后缀(unary suffix)
+```sql
+语法:
+    IS [NOT] (NULL|TRUE|FALSE)
+举例：
+    A IS NULL
+```
+4. 位异或(bitwise xor)
+```sql
+语法:
+    bitwise xor(^)
+举例：
+    A ^ B
+```
+5. 乘法类运算符(multiplicative operators)
+```sql
+语法:
+    star(*);
+    divide(/);
+    mod(%);
+    div(DIV)
+举例：
+    A * B
+```
+6. 加法类运算符(additive operators)
+```sql
+语法:
+    plus(+)；
+    minus(-)
+举例：
+    A + B
+```
+7. 字符串连接(string concatenate)
+```sql
+语法:
+    string concatenate(||)
+举例：
+    A || B
+```
+8. 位与(bitwise and)
+```sql
+语法:
+    bitwise and(&)
+举例：
+    A & B
+```
+9.  位或(bitwise or)
+```sql
+语法:
+    bitwise or(|)
+举例：
+    A | B
+```
 ### 1.2 Relational Operators(关系运算符)
 ### 1.3 Arithmetic Operators(算数运算符)
 ### 1.4 Logical Operators(逻辑运算符)
@@ -27,7 +80,7 @@
 ### 1.7 Operators on Complex Types(复杂类型操作符)
 ## 2. Built-in Functions(内建函数)
 ### 2.1 Mathematical Functions(数学函数)
-#### 2.1.1 Mathematical Functions and Operators for Decimal Datatypes(小数类型的数学函数和运算符)
+
 ### 2.2 Collection Functions(集合函数)
 ### 2.3 Type Conversion Functions(类型转换函数)
 ### 2.4 Date Functions(日期函数)
