@@ -1,8 +1,8 @@
 # Operators and Functions
 ## 1. Built-in Operators(内建运算符)
 ### 1.1 Operators Precedences(运算符优先顺序)
-1. 元素选择(element selector, dot)
-```sql
+1. 元素选择(element selector, dot)<br>
+```
 语法:
     bracket_op([]);
     dot(.)
@@ -10,8 +10,8 @@
     A[B];
     A.identifier
 ```
-2. 一元前缀运算符(unary prefix operators)
-```sql
+2. 一元前缀运算符(unary prefix operators)<br>
+```
 语法:
     unary(+);
     unary(-);
@@ -19,22 +19,22 @@
 举例：
     -A
 ```
-3. 一元后缀(unary suffix)
-```sql
+3. 一元后缀(unary suffix)<br>
+```
 语法:
     IS [NOT] (NULL|TRUE|FALSE)
 举例：
     A IS NULL
 ```
-4. 位异或(bitwise xor)
-```sql
+4. 位异或(bitwise xor)<br>
+```
 语法:
     bitwise xor(^)
 举例：
     A ^ B
 ```
-5. 乘法类运算符(multiplicative operators)
-```sql
+5. 乘法类运算符(multiplicative operators)<br>
+```
 语法:
     star(*);
     divide(/);
@@ -43,30 +43,30 @@
 举例：
     A * B
 ```
-6. 加法类运算符(additive operators)
-```sql
+6. 加法类运算符(additive operators)<br>
+```
 语法:
     plus(+)；
     minus(-)
 举例：
     A + B
 ```
-7. 字符串连接(string concatenate)
-```sql
+7. 字符串连接(string concatenate)<br>
+```
 语法:
     string concatenate(||)
 举例：
     A || B
 ```
-8. 位与(bitwise and)
-```sql
+8. 位与(bitwise and)<br>
+```
 语法:
     bitwise and(&)
 举例：
     A & B
 ```
-9.  位或(bitwise or)
-```sql
+9.  位或(bitwise or)<br>
+```
 语法:
     bitwise or(|)
 举例：
