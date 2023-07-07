@@ -1,7 +1,7 @@
 # Operators and Functions
 ## 1. Built-in Operators(内建运算符)
 ### 1.1 Operators Precedences(运算符优先顺序)
-1. 元素选择(element selector, dot)<br>
+#### 1.1.1 元素选择(element selector, dot)
 ```
 语法:
     bracket_op([]);
@@ -10,7 +10,7 @@
     A[B];
     A.identifier
 ```
-2. 一元前缀运算符(unary prefix operators)<br>
+#### 1.1.2 一元前缀运算符(unary prefix operators)
 ```
 语法:
     unary(+);
@@ -19,21 +19,21 @@
 举例：
     -A
 ```
-3. 一元后缀(unary suffix)<br>
+#### 1.1.3 一元后缀(unary suffix)
 ```
 语法:
     IS [NOT] (NULL|TRUE|FALSE)
 举例：
     A IS NULL
 ```
-4. 位异或(bitwise xor)<br>
+#### 1.1.4 位异或(bitwise xor)
 ```
 语法:
     bitwise xor(^)
 举例：
     A ^ B
 ```
-5. 乘法类运算符(multiplicative operators)<br>
+#### 1.1.5 乘法类运算符(multiplicative operators)
 ```
 语法:
     star(*);
@@ -43,7 +43,7 @@
 举例：
     A * B
 ```
-6. 加法类运算符(additive operators)<br>
+#### 1.1.6 加法类运算符(additive operators)
 ```
 语法:
     plus(+)；
@@ -51,21 +51,21 @@
 举例：
     A + B
 ```
-7. 字符串连接(string concatenate)<br>
+#### 1.1.7 字符串连接(string concatenate)
 ```
 语法:
     string concatenate(||)
 举例：
     A || B
 ```
-8. 位与(bitwise and)<br>
+#### 1.1.8 位与(bitwise and)
 ```
 语法:
     bitwise and(&)
 举例：
     A & B
 ```
-9.  位或(bitwise or)<br>
+#### 1.1.9 位或(bitwise or)
 ```
 语法:
     bitwise or(|)
@@ -84,6 +84,21 @@
 ### 2.2 Collection Functions(集合函数)
 ### 2.3 Type Conversion Functions(类型转换函数)
 ### 2.4 Date Functions(日期函数)
+#### 2.4.1 UNIX时间戳转日期函数：from_unixtime
+```
+语法：
+    from_unixtime(bigint unixtime[, string format])
+返回值：
+    string
+说明：
+    转化UNIX时间戳(从 1970-01-01 00:00:00 UTC 到指定时间的秒数)到当前时区的时间格式
+举例：
+    select from_unixtime(1688718148,'yyyyMMdd')
+    结果：20211105
+补充：
+    1. 如果format为空，则默认为yyyy-MM-dd HH:mm:ss
+    2. format参数的格式参考：https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+```
 ### 2.5 Conditional Functions(条件函数)
 ### 2.6 String Functions(字符串函数)
 ### 2.7 Data Masking Functions(数据屏蔽函数)
