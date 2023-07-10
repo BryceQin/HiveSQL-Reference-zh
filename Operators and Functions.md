@@ -90,7 +90,7 @@
     UNIX时间戳转日期函数
 语法：
     from_unixtime(bigint unixtime[, string format])
-返回值：
+返回值类型：
     string
 说明：
     转化UNIX时间戳到当前时区的时间格式
@@ -100,8 +100,8 @@
 ```
 补充：
 1. 如果`format`为空，则默认为`yyyy-MM-dd HH:mm:ss`
-2. format参数的格式参考：[Java DateFormat](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
-#### 2.4.2 unix_timestamp
+2. `format`参数的格式参考：[Java DateFormat](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+#### 2.4.2 `unix_timestamp`
 ```
 描述：
     日期转UNIX时间戳函数
@@ -116,10 +116,10 @@
     结果：1688953320
 ```
 补充：
-1. 如果date为空，则返回当前时间的UNIX时间戳, 在2.0版本后废弃，使用[current_timestamp()](#2410-current_timestamp)代替
-2. 如果pattern为空，则默认为yyyy-MM-dd HH:mm:ss
-3. pattern参数的格式参考：[Java DateFormat](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
-#### 2.4.10 current_timestamp
+1. 如果`date`为空，则返回当前时间的UNIX时间戳, 在2.0版本后废弃，使用[`current_timestamp()`](#2410-current_timestamp)代替
+2. 如果`pattern`为空，则默认为`yyyy-MM-dd HH:mm:ss`
+3. `pattern`参数的格式参考：[Java DateFormat](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+#### 2.4.10 `current_timestamp`
 ```
 ```
 ### 2.5 Conditional Functions(条件函数)
