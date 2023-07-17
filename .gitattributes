@@ -1,4 +1,1 @@
 *.md linguist-language=sql
-README.md merge=ours
-LICENSE.md merge=ours
-.gitattributes merge=ours
