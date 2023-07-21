@@ -1,0 +1,27 @@
+{
+    "title": "Hive中文手册",
+    "description": "分享记录一些关于HiveSQL的中文文档",
+    "author": "BryceQin",
+    "language": "zh-hans",
+    "root": ".",
+    "structure": {
+        "readme": "introduction.md"
+    },
+    "plugins": [
+        "github",
+        "github-buttons"
+    ],
+
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/BryceQin/HiveSQL-Reference-zh"
+        },
+        "github-buttons": {
+            "repo": "BryceQin/HiveSQL-Reference-zh",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        }
+    }
+}
